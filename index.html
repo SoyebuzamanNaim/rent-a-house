@@ -1,40 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rinterio</title>
     <!-- daisyUI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- google font CDN -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome CDN  -->
+    <script
+      src="https://kit.fontawesome.com/eb373dea9d.js"
+      crossorigin="anonymous"
+    ></script>
 
     <style>
-        .font-Manrope{
-            font-family: "Manrope", sans-serif;
-        }
+      .font-Manrope {
+        font-family: "Manrope", sans-serif;
+      }
     </style>
-</head>
-<body class="font-Manrope">
+  </head>
+  <body class="font-Manrope">
     <!-- header section  -->
-    <header>
-        <nav>
-          
-        </nav>
+    <header class="container lg:px-20 md:px-10 px-4 mx-auto bg-gradient-to-b from-slate-50 to-white">
+
+      <!-- nav bar  -->
+      <nav>
+        <div class="navbar flex justify-around">
+          <div class="md:flex-1">
+            <div>
+              <i
+                class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-lime-300 p-2"
+              ></i>
+            </div>
+            <div>
+              <a class="text-2xl font-extrabold p-1">Rinterio</a>
+            </div>
+          </div>
+          <div class="hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li class="font-bold"><a>Home</a></li>
+              <li><a class="text-gray-500">Services</a></li>
+              <li><a class="text-gray-500">Portfolio</a></li>
+              <li><a class="text-gray-500">Blogs</a></li>
+              <li><a class="text-gray-500">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="space-x-2 hidden md:flex">
+            <div>
+              <a href="#search"
+                ><i
+                  class="fa-solid text-gray-500 border-solid border-2 fa-magnifying-glass p-3 rounded-full bg-white"
+                ></i
+              ></a>
+            </div>
+            <div>
+              <i
+                class="fa-solid fa-cart-shopping p-3 text-gray-500 border-solid border-2 rounded-full bg-white"
+              ></i>
+            </div>
+            <div>
+              <div>
+                <a class="btn bg-lime-300 rounded-3xl"
+                  >Book Consult
+                  <div class="rounded-full text-lime-300 bg-black p-2">
+                    <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown dropdown-bottom dropdown-end lg:hidden">
+            <div tabindex="0" role="button" class="btn btn-ghost">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow"
+            >
+              <li class="font-bold"><a>Home</a></li>
+              <li><a class="text-gray-500">Services</a></li>
+              <li><a class="text-gray-500">Portfolio</a></li>
+              <li><a class="text-gray-500">Blogs</a></li>
+              <li><a class="text-gray-500">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- banner section  -->
+      <div>
         
+      </div>
+
     </header>
 
     <!-- main section  -->
-    <main>
-
-    </main>
+    <main></main>
 
     <!-- footer section  -->
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
