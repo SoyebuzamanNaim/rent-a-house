@@ -29,19 +29,26 @@
       .font-Manrope {
         font-family: "Manrope", sans-serif;
       }
+      .main-color{
+        color: rgb(33, 33, 33);
+      }
     </style>
   </head>
-  <body class="font-Manrope">
+  <body class="font-Manrope main-color">
     <!-- header section  -->
-    <header class="container lg:px-20 md:px-10 px-4 mx-auto bg-gradient-to-b from-slate-50 to-white">
-
+    <header
+      class="bg-gradient-to-b from-gray-200 to-white"
+      
+    > 
+    <!-- container  -->
+     <div class="container mx-auto pb-8 md:pb-12 lg:pb-16">
       <!-- nav bar  -->
-      <nav>
-        <div class="navbar flex justify-around">
+      <nav class="pt-2">
+        <div class="navbar flex justify-between">
           <div class="md:flex-1">
             <div>
               <i
-                class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-lime-300 p-2"
+                class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-lime-300 p-2 "
               ></i>
             </div>
             <div>
@@ -62,20 +69,20 @@
             <div>
               <a href="#search"
                 ><i
-                  class="fa-solid text-gray-500 border-solid border-2 fa-magnifying-glass p-3 rounded-full bg-white"
+                  class="fa-solid text-gray-500  fa-magnifying-glass p-3 rounded-full border border-gray-300 bg-white active:scale-95 hover:bg-gray-50 shadow-sm"
                 ></i
               ></a>
             </div>
             <div>
-              <i
-                class="fa-solid fa-cart-shopping p-3 text-gray-500 border-solid border-2 rounded-full bg-white"
-              ></i>
+              <a href="#cart"><i
+                class="fa-solid fa-cart-shopping p-3 text-gray-500  rounded-full border border-gray-300 bg-white active:scale-95 hover:bg-gray-50 shadow-sm"
+              ></i></a>
             </div>
             <div>
               <div>
-                <a class="btn bg-lime-300 rounded-3xl"
+                <a class="btn bg-lime-300 rounded-3xl font-extrabold border-0 hover:bg-lime-400 shadow-sm"
                   >Book Consult
-                  <div class="rounded-full text-lime-300 bg-black p-2">
+                  <div class="rounded-full text-lime-300 bg-black hover:bg-slate-700 p-2">
                     <i class="fa-solid fa-arrow-right -rotate-45"></i>
                   </div>
                 </a>
@@ -84,20 +91,7 @@
           </div>
           <div class="dropdown dropdown-bottom dropdown-end lg:hidden">
             <div tabindex="0" role="button" class="btn btn-ghost">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
+              <i class="fa-solid fa-bars p-3 text-gray-500  rounded-full border border-gray-300 bg-white active:scale-95 hover:bg-gray-50 shadow-sm "></i>
             </div>
             <ul
               tabindex="0"
@@ -113,10 +107,23 @@
         </div>
       </nav>
       <!-- banner section  -->
-      <div>
-        
+      <div class="my-5 md:mt-10 md:mb-16 lg:mb-2 text-center">
+        <div><img src="images/banner.png" alt="house" class="mx-auto lg:w-6/12 md:w-7/12 w-8/12" /></div>
+        <div class="w-fit">
+          <h1 class="lg:text-5xl text-2xl md:text-4xl font-extrabold lg:px-8 md:px-4 px-2 pt-3 md:mt-5">A barn house of this design has a striking appearance</h1>
+          <p class="lg:px-14 md:px-10 px-5 py-5 md:py-6 lg:py-10 text-gray-500 font-bold">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+          <div>
+            <a class="btn bg-lime-200 hover:bg-lime-300 rounded-3xl font-extrabold"
+              >View Details
+              <div class="rounded-full main-color bg-lime-300 p-2">
+                <i class="fa-solid fa-arrow-right -rotate-45 "></i>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
-
+    </div>
+      
     </header>
 
     <!-- main section  -->
