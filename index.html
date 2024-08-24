@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rinterio</title>
-    <!-- daisyUI CDN -->
+    <!-- daisyUI + tailwindCDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
       rel="stylesheet"
@@ -35,8 +35,10 @@
     </style>
   </head>
   <body class="font-Manrope main-color">
+    <!-- lg:px-20 px-5 is for all container -->
+
     <!-- header section  -->
-    <header class="lg:px-20 bg-gradient-to-b from-gray-200 to-white">
+    <header class="lg:px-20 px-5  bg-gradient-to-b from-gray-200 to-white">
       <!-- container  -->
       <div class="container mx-auto pb-6 md:pb-10 lg:pb-16">
         <!-- nav bar  -->
@@ -150,11 +152,13 @@
     <!-- main section  -->
     <main>
       <!-- thought process container -->
-      <div class="bg-gray-200 lg:px-20">
+      <div class="bg-gray-200 lg:px-20 px-5 ">
         <!-- thoughtful design  -->
-        <div class="container mx-auto px-5 lg:gap-8 lg:pb-20 md:pb-16 pb-10 pt-10 md:pt-16 lg:pt-20 grid lg:grid-cols-2">
+        <div
+          class="container mx-auto lg:gap-8 lg:pb-20 md:pb-16 pb-10 pt-10 md:pt-16 lg:pt-20 grid lg:grid-cols-2"
+        >
           <!-- text item -->
-          <div class="relative space-y-5 ">
+          <div class="relative space-y-4">
             <!-- arrow img -->
             <div class="absolute -top-14 -left-20">
               <img
@@ -164,7 +168,7 @@
               />
             </div>
             <!-- text title  -->
-            <div class="text-center lg:text-start space-y-5">
+            <div class="text-center lg:text-start space-y-4">
               <button class="btn rounded-full bg-white font-extrabold">
                 <i class="fa-solid fa-arrow-right"></i> About Us
               </button>
@@ -210,13 +214,98 @@
           </div>
           <!-- images item  -->
           <div class="pt-5 md:pt-10">
-            <div class="rounded-xl  w-full h-64 md:h-96 lg:h-full bg-[url('images/Rectangle.png')] bg-cover bg-no-repeat bg-center">
-            
-            </div>
+            <div
+              class="rounded-xl w-full h-64 md:h-96 lg:h-full bg-[url('images/Rectangle.png')] bg-cover bg-no-repeat bg-center"
+            ></div>
           </div>
         </div>
         <!-- work process  -->
-        <div></div>
+        <div class="container mx-auto pb-10 md:pb-16 lg:pb-20">
+          <!-- text title  -->
+          <div class="text-center space-y-4 pb-4">
+            <button class="btn rounded-full bg-white font-extrabold">
+              <i class="fa-solid fa-arrow-right"></i> How we works
+            </button>
+            <h1 class="lg:text-4xl text-xl md:text-3xl font-extrabold">
+              Our Works Process
+            </h1>
+            <p class="text-gray-500 font-bold lg:w-9/12 mx-auto">
+              We believe that a well-defined work process is the key to delivering exceptional results. Our approach is systematic, efficient, and tailored to meet your specific needs. 
+            </p>
+          </div>
+          <!-- process card container -->
+           
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+              <!-- card1 -->
+              <div class=" bg-pink-300  rounded-xl p-5 space-y-2 flex flex-col justify-between">
+                <div>
+                  <img src="images/concept.png" alt="concept png" />
+                </div>
+                <div>
+                  <h1 class="lg:text-3xl text-lg md:text-2xl font-extrabold">
+                    Concept
+                  </h1>
+                 
+                </div>
+                <div> 
+                  <p class="text-gray-700 ">
+                  Ensure alignment between the concept and the client's brand identity and market positioning.
+                </p>
+                </div>
+              </div>
+              <!-- card2 -->
+              <div class=" bg-amber-300 rounded-xl p-5 space-y-2 flex flex-col justify-around">
+                <div>
+                  <img src="images/flow-chart.png" alt="flow-chart png" />
+                </div>
+                <div>
+                  <h1 class="lg:text-3xl text-lg md:text-2xl font-extrabold">
+                    Design Process
+                  </h1>
+                 
+                </div>
+                <div> 
+                  <p class="text-gray-600 ">
+                    Utilize cutting-edge tools and methodologies to ensure high-quality design output.
+                </p>
+                </div>
+              </div>
+              <!-- card3 -->
+              <div class=" bg-emerald-300 rounded-xl p-5 space-y-2 flex flex-col justify-around">
+                <div>
+                  <img src="images/vision.png" alt="vision png" />
+                </div>
+                <div>
+                  <h1 class="lg:text-3xl text-lg md:text-2xl font-extrabold">
+                    Supervision
+                  </h1>
+                 
+                </div>
+                <div> 
+                  <p class="text-gray-600 ">
+                    Address any challenges or changes promptly to keep the project on track.
+                </p>
+                </div>
+              </div>
+              <!-- card4 -->
+              <div class=" bg-blue-300  rounded-xl p-5 space-y-2 flex flex-col justify-around">
+                <div>
+                  <img src="images/concept.png" alt="concept png" />
+                </div>
+                <div>
+                  <h1 class="lg:text-3xl text-lg md:text-2xl font-extrabold">
+                    Concept
+                  </h1>
+                 
+                </div>
+                <div> 
+                  <p class="text-gray-600 ">
+                  Ensure alignment between the concept and the client's brand identity and market positioning.
+                </p>
+                </div>
+              </div>
+            </div>
+
       </div>
     </main>
 
