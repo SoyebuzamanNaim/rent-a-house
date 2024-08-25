@@ -38,7 +38,7 @@
     <!-- lg:px-20 px-5 is for all container -->
 
     <!-- header section  -->
-    <header class="lg:px-20 px-5 bg-gradient-to-b from-gray-200 to-white">
+    <header id="home" class="lg:px-20 px-5 bg-gradient-to-b from-gray-200 to-white">
       <!-- container  -->
       <div class="container mx-auto pb-6 md:pb-10 lg:pb-16">
         <!-- nav bar  -->
@@ -482,58 +482,98 @@
               home, our team is ready to bring your ideas to life.
             </p>
           </div>
-          <form class="md:w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
-            
-              <div>
-                <input
-                  type="text"
-                  placeholder="First Name*"
-                  class="input input-bordered w-full rounded-3xl"
-                />
-              </div>
-              <div>
-                <input
-                  type="text"
-                  placeholder="Last Name*"
-                  class="input input-bordered w-full rounded-3xl"
-                />
-              </div>
-              <div>
-                <input
-                  type="text"
-                  placeholder="Phone Number*"
-                  class="input input-bordered w-full rounded-3xl"
-                />
-              </div>
-              <div>
-                <input
-                  type="text"
-                  placeholder="Email Number*"
-                  class="input input-bordered w-full rounded-3xl"
-                />
-              </div>
-              <div class="form-control md:col-span-2">
-                <textarea
-                  class="textarea textarea-bordered h-56 rounded-3xl"
-                  placeholder="Write your message here"
-                ></textarea>
-              </div>
-              <div class="md:col-span-2">
-                <a
-                  class="btn bg-lime-300 hover:bg-lime-300 rounded-3xl font-extrabold border-2 border-lime-300 w-full"
-                  >Send Mail
-                  <div class="rounded-full text-white bg-black p-2">
-                    <i class="fa-solid fa-arrow-right -rotate-45 lime-300"></i>
-                  </div>
-                </a>
-              </div>
-           
+          <form
+            class="md:w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-5"
+          >
+            <div>
+              <input
+                type="text"
+                placeholder="First Name*"
+                class="input input-bordered w-full rounded-3xl"
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="Last Name*"
+                class="input input-bordered w-full rounded-3xl"
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="Phone Number*"
+                class="input input-bordered w-full rounded-3xl"
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="Email Number*"
+                class="input input-bordered w-full rounded-3xl"
+              />
+            </div>
+            <div class="form-control md:col-span-2">
+              <textarea
+                class="textarea textarea-bordered h-56 rounded-3xl"
+                placeholder="Write your message here"
+              ></textarea>
+            </div>
+            <div class="md:col-span-2">
+              <a
+                class="btn bg-lime-300 hover:bg-lime-500 rounded-3xl font-extrabold border-2 border-lime-300 w-full"
+                >Send Mail
+                <div class="rounded-full text-white bg-[#212121] p-2">
+                  <i class="fa-solid fa-arrow-right -rotate-45 lime-300"></i>
+                </div>
+              </a>
+            </div>
           </form>
         </div>
       </div>
     </main>
 
     <!-- footer section  -->
-    <footer></footer>
+    <footer class="bg-[#212121] lg:px-20 px-5">
+      
+        <div class="container mx-auto py-10 md:py-16 lg:py-20">
+          <!-- text title  -->
+          <div class="text-center space-y-4 ">
+            <div class="flex justify-center">
+              <div>
+                <i
+                  class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-lime-300 p-2"
+                ></i>
+              </div>
+              <div>
+                <a class="text-2xl text-white font-extrabold p-1 ">Rinterio</a>
+              </div>
+            </div>
+           
+            <p class="text-gray-500 font-bold lg:w-9/12 mx-auto">
+              At Rinterio, we believe that every space has the potential to inspire.
+            </p>
+           
+              <ul class="flex-row md:flex space-y-5 md:space-y-0  justify-around md:w-9/12 mx-auto py-5">
+               
+                <li><a href="#home" class="text-gray-300 font-bold active:font-extrabold">Home</a></li>
+                <li><a class="text-gray-300 font-bold active:font-extrabold">Services</a></li>
+                <li><a class="text-gray-300 font-bold active:font-extrabold">Portfolio</a></li>
+                <li><a class="text-gray-300 font-bold active:font-extrabold">Blogs</a></li>
+                <li><a class="text-gray-300 font-bold active:font-extrabold">ContactUs</a></li>
+              </ul>
+              <div>
+                <a
+                  class="btn bg-lime-300 hover:bg-lime-500 rounded-3xl font-extrabold border-2 border-lime-300"
+                  >Book Consult
+                  <div class="rounded-full text-white bg-[#212121] p-2">
+                    <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                  </div>
+                </a>
+              </div>
+          </div>
+        </div>
+      
+    </footer>
   </body>
 </html>
