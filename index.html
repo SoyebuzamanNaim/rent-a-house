@@ -30,7 +30,7 @@
         font-family: "Manrope", sans-serif;
       }
       .main-color {
-        color: rgb(33, 33, 33);
+        color: #212121;
       }
     </style>
   </head>
@@ -137,7 +137,7 @@
             </p>
             <div>
               <a
-                class="btn bg-lime-200 hover:bg-lime-300 rounded-3xl font-extrabold"
+                class="btn bg-lime-200 hover:bg-lime-300 rounded-3xl font-extrabold border-2 border-lime-300"
                 >View Details
                 <div class="rounded-full main-color bg-lime-300 p-2">
                   <i class="fa-solid fa-arrow-right -rotate-45"></i>
@@ -336,7 +336,9 @@
           <!-- portfolio card container -->
           <div class="grid grid-cols-1 gap-5">
             <!-- card-container-1  -->
-            <div class="grid grid-cols-1 lg:grid-cols-5 space-y-5 lg:space-x-5 lg:space-y-0">
+            <div
+              class="grid grid-cols-1 lg:grid-cols-5 space-y-5 lg:space-x-5 lg:space-y-0"
+            >
               <!-- prot-card-1 -->
               <div
                 class="card bg-white shadow-xl grid grid-cols-1 lg:grid-cols-2 col-span-3"
@@ -376,12 +378,12 @@
               </div>
               <!-- prot-card-2 -->
 
-              <div class="card bg-white shadow-xl col-span-2 ">
+              <div class="card bg-white shadow-xl col-span-2">
                 <figure class="px-10 py-10 my-auto">
                   <img
                     src="images/img2.png"
                     alt="commercial"
-                    class="rounded-xl w-full "
+                    class="rounded-xl w-full"
                   />
                 </figure>
               </div>
@@ -389,7 +391,7 @@
             <!-- card-container-2  -->
             <div class="flex flex-col-reverse lg:flex-row gap-5">
               <!-- prot-card-3 -->
-              <div class="card bg-white shadow-xl flex-[2] ">
+              <div class="card bg-white shadow-xl flex-[2]">
                 <figure class="px-10 py-10 my-auto">
                   <img
                     src="images/img3.png"
@@ -399,43 +401,43 @@
                 </figure>
               </div>
               <!-- prot-card-4 -->
-              
-              <div
-              class="card bg-white shadow-xl grid grid-cols-1 lg:grid-cols-2 col-span-3 flex-[4]"
-            >
-              <figure class="px-10 py-10 lg:pr-0">
-                <img
-                  src="images/img4.png"
-                  alt="commercial pic"
-                  class="rounded-xl w-full"
-                />
-              </figure>
-              <div class="card-body flex justify-center">
-                <div>
-                  <h2 class="card-title font-bold">Commercial</h2>
-                  <p class="text-gray-500">
-                    Crafted with the timeless elegance of weathered wood and
-                    enhanced with sleek metal accents, the Barn House is more
-                    than just a home; it's a sanctuary.
-                  </p>
-                </div>
 
-                <div class="flex gap-2 items-center">
+              <div
+                class="card bg-white shadow-xl grid grid-cols-1 lg:grid-cols-2 col-span-3 flex-[4]"
+              >
+                <figure class="px-10 py-10 lg:pr-0">
+                  <img
+                    src="images/img4.png"
+                    alt="commercial pic"
+                    class="rounded-xl w-full"
+                  />
+                </figure>
+                <div class="card-body flex justify-center">
                   <div>
-                    <a href="#details" class="font-bold hover:text-lime-800"
-                      >View Details</a
-                    >
+                    <h2 class="card-title font-bold">Commercial</h2>
+                    <p class="text-gray-500">
+                      Crafted with the timeless elegance of weathered wood and
+                      enhanced with sleek metal accents, the Barn House is more
+                      than just a home; it's a sanctuary.
+                    </p>
                   </div>
-                  <div>
-                    <a href="#details"
-                      ><i
-                        class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-lime-300 p-2 active:scale-95"
-                      ></i
-                    ></a>
+
+                  <div class="flex gap-2 items-center">
+                    <div>
+                      <a href="#details" class="font-bold hover:text-lime-800"
+                        >View Details</a
+                      >
+                    </div>
+                    <div>
+                      <a href="#details"
+                        ><i
+                          class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-lime-300 p-2 active:scale-95"
+                        ></i
+                      ></a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
               <!-- prot-card-5 -->
               <div class="card bg-white shadow-xl flex-[2]">
                 <figure class="px-10 py-10 my-auto">
@@ -458,6 +460,75 @@
               </figure>
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- Discuss project container -->
+      <div
+        class="bg-[url('images/bg.jpg')] bg-cover bg-no-repeat bg-center] lg:px-20 px-5 m-2"
+      >
+        <!-- Discuss project section -->
+        <div class="container mx-auto py-10 md:py-16 lg:py-20">
+          <!-- text title  -->
+          <div class="text-center space-y-4 pb-4">
+            <button class="btn rounded-full bg-lime-100 font-extrabold">
+              <i class="fa-solid fa-arrow-right"></i> Let's Connect
+            </button>
+            <h1 class="lg:text-4xl text-xl md:text-3xl font-extrabold">
+              Let's Discuss Next Project
+            </h1>
+            <p class="text-gray-500 font-bold lg:w-9/12 mx-auto">
+              Whether you're envisioning a cozy retreat or a spacious family
+              home, our team is ready to bring your ideas to life.
+            </p>
+          </div>
+          <form class="md:w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
+            
+              <div>
+                <input
+                  type="text"
+                  placeholder="First Name*"
+                  class="input input-bordered w-full rounded-3xl"
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Last Name*"
+                  class="input input-bordered w-full rounded-3xl"
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Phone Number*"
+                  class="input input-bordered w-full rounded-3xl"
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Email Number*"
+                  class="input input-bordered w-full rounded-3xl"
+                />
+              </div>
+              <div class="form-control md:col-span-2">
+                <textarea
+                  class="textarea textarea-bordered h-56 rounded-3xl"
+                  placeholder="Write your message here"
+                ></textarea>
+              </div>
+              <div class="md:col-span-2">
+                <a
+                  class="btn bg-lime-300 hover:bg-lime-300 rounded-3xl font-extrabold border-2 border-lime-300 w-full"
+                  >Send Mail
+                  <div class="rounded-full text-white bg-black p-2">
+                    <i class="fa-solid fa-arrow-right -rotate-45 lime-300"></i>
+                  </div>
+                </a>
+              </div>
+           
+          </form>
         </div>
       </div>
     </main>
