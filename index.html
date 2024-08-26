@@ -38,7 +38,10 @@
     <!-- lg:px-20 px-5 is for all container -->
 
     <!-- header section  -->
-    <header id="home" class="lg:px-20 px-5 bg-gradient-to-b from-gray-200 to-white">
+    <header
+      id="home"
+      class="lg:px-20 px-5 bg-gradient-to-b from-gray-200 to-white"
+    >
       <!-- container  -->
       <div class="container mx-auto pb-6 md:pb-10 lg:pb-16">
         <!-- nav bar  -->
@@ -462,6 +465,36 @@
           </div>
         </div>
       </div>
+      <!-- Newsletter section  -->
+      <div class="bg-gray-200 lg:px-20 px-5 mt-2">
+        <div class="container mx-auto py-10 md:py-16 lg:py-20">
+          <div class="bg-gray-600 p-3 rounded-lg md:w-5/6 mx-auto">
+            <div class="bg-white  p-5 text-center space-y-5 py-10">
+              <!-- text title  -->
+
+              <button class="btn rounded-full bg-stone-300 font-extrabold">
+                <i class="fa-solid fa-arrow-right"></i> Get info regularly
+              </button>
+              <h1 class="lg:text-4xl text-xl md:text-3xl font-extrabold">
+                JOIN OUR NEWSLETTER
+              </h1>
+              <p class="text-gray-500 font-bold w-9/12 mx-auto">
+                Subscribe our newsletter to receive the latest news and
+                exclusive offers every week. No spam.
+              </p>
+              <div>
+                <button class="btn w-full md:w-5/12">Enter Your Email</button>
+              </div>
+              <div>
+                <button class="btn w-full md:w-5/12 bg-slate-600 text-white hover:bg-slate-400">Subscribe</button>
+              </div>
+              <p class="text-gray-500 font-extrabold lg:w-9/12 mx-auto underline">
+                No Thanks
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Discuss project container -->
       <div
@@ -477,7 +510,7 @@
             <h1 class="lg:text-4xl text-xl md:text-3xl font-extrabold">
               Let's Discuss Next Project
             </h1>
-            <p class="text-gray-500 font-bold lg:w-9/12 mx-auto">
+            <p class="text-gray-500 font-bold w-10/12 mx-auto">
               Whether you're envisioning a cozy retreat or a spacious family
               home, our team is ready to bring your ideas to life.
             </p>
@@ -535,45 +568,65 @@
 
     <!-- footer section  -->
     <footer class="bg-[#212121] lg:px-20 px-5">
-      
-        <div class="container mx-auto py-10 md:py-16 lg:py-20">
-          <!-- text title  -->
-          <div class="text-center space-y-4 ">
-            <div class="flex justify-center">
-              <div>
-                <i
-                  class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-lime-300 p-2"
-                ></i>
-              </div>
-              <div>
-                <a class="text-2xl text-white font-extrabold p-1 ">Rinterio</a>
-              </div>
+      <div class="container mx-auto py-10 md:py-16 lg:py-20">
+        <!-- text title  -->
+        <div class="text-center space-y-4">
+          <div class="flex justify-center">
+            <div>
+              <i
+                class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-lime-300 p-2"
+              ></i>
             </div>
-           
-            <p class="text-gray-500 font-bold lg:w-9/12 mx-auto">
-              At Rinterio, we believe that every space has the potential to inspire.
-            </p>
-           
-              <ul class="flex-row md:flex space-y-5 md:space-y-0  justify-around md:w-9/12 mx-auto py-5">
-               
-                <li><a href="#home" class="text-gray-300 font-bold active:font-extrabold">Home</a></li>
-                <li><a class="text-gray-300 font-bold active:font-extrabold">Services</a></li>
-                <li><a class="text-gray-300 font-bold active:font-extrabold">Portfolio</a></li>
-                <li><a class="text-gray-300 font-bold active:font-extrabold">Blogs</a></li>
-                <li><a class="text-gray-300 font-bold active:font-extrabold">ContactUs</a></li>
-              </ul>
-              <div>
-                <a
-                  class="btn bg-lime-300 hover:bg-lime-500 rounded-3xl font-extrabold border-2 border-lime-300"
-                  >Book Consult
-                  <div class="rounded-full text-white bg-[#212121] p-2">
-                    <i class="fa-solid fa-arrow-right -rotate-45"></i>
-                  </div>
-                </a>
+            <div>
+              <a class="text-2xl text-white font-extrabold p-1">Rinterio</a>
+            </div>
+          </div>
+
+          <p class="text-gray-500 font-bold lg:w-9/12 mx-auto">
+            At Rinterio, we believe that every space has the potential to
+            inspire.
+          </p>
+
+          <ul
+            class="flex-row md:flex space-y-5 md:space-y-0 justify-around md:w-9/12 mx-auto py-5"
+          >
+            <li>
+              <a
+                href="#home"
+                class="text-gray-300 font-bold active:font-extrabold"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="text-gray-300 font-bold active:font-extrabold"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a class="text-gray-300 font-bold active:font-extrabold"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a class="text-gray-300 font-bold active:font-extrabold">Blogs</a>
+            </li>
+            <li>
+              <a class="text-gray-300 font-bold active:font-extrabold"
+                >ContactUs</a
+              >
+            </li>
+          </ul>
+          <div>
+            <a
+              class="btn bg-lime-300 hover:bg-lime-500 rounded-3xl font-extrabold border-2 border-lime-300"
+              >Book Consult
+              <div class="rounded-full text-white bg-[#212121] p-2">
+                <i class="fa-solid fa-arrow-right -rotate-45"></i>
               </div>
+            </a>
           </div>
         </div>
-      
+      </div>
     </footer>
   </body>
 </html>
